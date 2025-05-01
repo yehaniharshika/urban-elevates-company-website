@@ -1,13 +1,32 @@
-import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Projects/Projects.css";
 
 // Image Imports
 import HotelGrandiose from "../../assets/Hotel-Grandiose/4.jpg";
 import HousePanadura from "../../assets/House-Panadura/3.jpg";
+import HousePanadura2 from "../../assets/House-Panadura/1.jpg";
+import HousePanadura3 from "../../assets/House-Panadura/2.jpg";
+import HousePanadura4 from "../../assets/House-Panadura/4.jpg";
+import HousePanadura5 from "../../assets/House-Panadura/5.jpg";
+
 import VillaDesign from "../../assets/Villa-Design/2.jpg";
+import VillaDesign2 from "../../assets/Villa-Design/1.jpg";
+import VillaDesign3 from "../../assets/Villa-Design/3.jpg";
+import VillaDesign4 from "../../assets/Villa-Design/4.jpg";
+
 import PlazaDesign from "../../assets/Plaza-Design-Vavuniya/4.jpg";
+import PlazaDesign2 from "../../assets/Plaza-Design-Vavuniya/1.jpg";
+import PlazaDesign3 from "../../assets/Plaza-Design-Vavuniya/2.jpg";
+import PlazaDesign4 from "../../assets/Plaza-Design-Vavuniya/3.jpg";
+import PlazaDesign5 from "../../assets/Plaza-Design-Vavuniya/5.jpg";
+import PlazaDesign6 from "../../assets/Plaza-Design-Vavuniya/6.jpg";
+import PlazaDesign7 from "../../assets/Plaza-Design-Vavuniya/7.jpg";
+import PlazaDesign8 from "../../assets/Plaza-Design-Vavuniya/8.jpg";
+import PlazaDesign9 from "../../assets/Plaza-Design-Vavuniya/9.jpg";
+import PlazaDesign10 from "../../assets/Plaza-Design-Vavuniya/10.jpg";
+
 import RestaurantInteriorProject from "../../assets/Restaurant-Interior-Negambo/1.jpg";
+
 import ModernHouse from "../../assets/Modern-House/1.jpg";
 import ModernHouse2 from "../../assets/Modern-House/2.jpg";
 import ModernHouse3 from "../../assets/Modern-House/3.jpg";
@@ -22,6 +41,21 @@ import ModernHouse11 from "../../assets/Modern-House/11.jpg";
 import ModernHouse12 from "../../assets/Modern-House/12.jpg";
 
 import HouseDesign from "../../assets/House-Design/1.jpg";
+import HouseDesign2 from "../../assets/House-Design/2.jpg";
+import HouseDesign8 from "../../assets/House-Design/8.jpg";
+import HouseDesign9 from "../../assets/House-Design/9.jpg";
+import HouseDesign10 from "../../assets/House-Design/10.jpg";
+import HouseDesign11 from "../../assets/House-Design/11.jpg";
+import HouseDesign12 from "../../assets/House-Design/12.jpg";
+import HouseDesign13 from "../../assets/House-Design/13.jpg";
+import HouseDesign14 from "../../assets/House-Design/14.jpg";
+import HouseDesign15 from "../../assets/House-Design/15.jpg";
+import HouseDesign16 from "../../assets/House-Design/16.jpg";
+import HouseDesign17 from "../../assets/House-Design/17.jpg";
+import HouseDesign18 from "../../assets/House-Design/18.jpg";
+import HouseDesign19 from "../../assets/House-Design/19.jpg";
+import HouseDesign20 from "../../assets/House-Design/20.jpg";
+
 import RestaurantInterior2 from "../../assets/Restaurant-Interior-Negambo/2.jpg";
 import RestaurantInterior3 from "../../assets/Restaurant-Interior-Negambo/3.jpg";
 import RestaurantInterior4 from "../../assets/Restaurant-Interior-Negambo/4.jpg";
@@ -60,28 +94,42 @@ const projects: Project[] = [
       ModernHouse9,
       ModernHouse10,
       ModernHouse11,
-      ModernHouse12
+      ModernHouse12,
     ],
   },
 
   {
     title: "Modern Housing Project in Panadura",
     description:
-      "A sustainable office space focused on energy efficiency and open workspaces.",
+      "This project, designed for our client Mr. Charith Chaminda, presents a harmonious composition of modern architecture and natural elements. Featuring a minimalist facade that incorporates textured stone, exposed brickwork, and cascading greenery, the design creates a serene and visually striking presence.\n\n" +
+      "The space is thoughtfully crafted to serve both residential and commercial purposes, offering flexible functionality within a cohesive aesthetic. With sustainability at its core, the project integrates energy-efficient solutions and eco-conscious materials, aligning with our commitment to environmentally responsible design.\n\n" +
+      "It exemplifies the balance between beauty and practicality, offering a tranquil yet sophisticated environment ideal for both living and business use.",
+
     mainImg: HousePanadura,
     gallery: [
-      "https://via.placeholder.com/600x400?text=Office+1",
-      "https://via.placeholder.com/600x400?text=Office+2",
+      HousePanadura,
+      HousePanadura2,
+      HousePanadura3,
+      HousePanadura4,
+      HousePanadura5,
     ],
   },
   {
-    title: "Plaza Design(Residential Building Project) in Vavuniya",
+    title: "Plaza Design(Commercial Building Project) in Vavuniya",
     description:
       "An open green park with natural walkways, lighting, and gathering spots.",
     mainImg: PlazaDesign,
     gallery: [
-      "https://via.placeholder.com/600x400?text=Park+1",
-      "https://via.placeholder.com/600x400?text=Park+2",
+      PlazaDesign,
+      PlazaDesign2,
+      PlazaDesign3,
+      PlazaDesign4,
+      PlazaDesign5,
+      PlazaDesign6,
+      PlazaDesign7,
+      PlazaDesign8,
+      PlazaDesign9,
+      PlazaDesign10,
     ],
   },
   {
@@ -100,16 +148,17 @@ const projects: Project[] = [
     description:
       "A stunning villa design offering a comfortable and spacious living environment.",
     mainImg: VillaDesign,
-    gallery: [
-      "https://via.placeholder.com/600x400?text=VillaDesign+1",
-      "https://via.placeholder.com/600x400?text=VillaDesign+2",
-      "https://via.placeholder.com/600x400?text=VillaDesign+3",
-    ],
+    gallery: [VillaDesign2, VillaDesign, VillaDesign3, VillaDesign4],
   },
   {
     title: "Restaurant Interior Design in Negambo",
     description:
-      "A modern and stylish restaurant interior with a cozy and welcoming ambiance.",
+      "This interior design project transforms a restaurant in central Negombo for Mr. Ranaweera, blending natural aesthetics with modern functionality to create a refined and welcoming dining space.\n\n" +
+      "The interior showcases a warm wooden palette, woven pendant lighting, earthy textures, and lush greenery. Thoughtfully selected furniture and decor foster a relaxed, nature-connected atmosphere.\n\n" +
+      "Eco-friendly materials, natural lighting, and biophilic elements enhance sustainability and promote well-being, while maintaining a clean, modern look.\n\n" +
+      "The spacious layout supports smooth movement and comfortable seating, with natural tones and textured finishes adding depth and visual interest.\n\n" +
+      "This project offers a complete, stylish, and efficient interior solution—ideal for contemporary hospitality environments.",
+
     mainImg: RestaurantInteriorProject,
     gallery: [
       RestaurantInteriorProject,
@@ -128,8 +177,21 @@ const projects: Project[] = [
       "A contemporary house design that focuses on minimalism and functionality.",
     mainImg: HouseDesign,
     gallery: [
-      "https://via.placeholder.com/600x400?text=House+Design+1",
-      "https://via.placeholder.com/600x400?text=House+Design+2",
+      HouseDesign,
+      HouseDesign2,
+      HouseDesign8,
+      HouseDesign9,
+      HouseDesign10,
+      HouseDesign11,
+      HouseDesign12,
+      HouseDesign13,
+      HouseDesign14,
+      HouseDesign15,
+      HouseDesign16,
+      HouseDesign17,
+      HouseDesign18,
+      HouseDesign19,
+      HouseDesign20,
     ],
   },
 ];
