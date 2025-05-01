@@ -1,5 +1,34 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../Projects/Projects.css";
+
+// Image Imports
+import HotelGrandiose from "../../assets/Hotel-Grandiose/4.jpg";
+import HousePanadura from "../../assets/House-Panadura/3.jpg";
+import VillaDesign from "../../assets/Villa-Design/2.jpg";
+import PlazaDesign from "../../assets/Plaza-Design-Vavuniya/4.jpg";
+import RestaurantInteriorProject from "../../assets/Restaurant-Interior-Negambo/1.jpg";
+import ModernHouse from "../../assets/Modern-House/1.jpg";
+import ModernHouse2 from "../../assets/Modern-House/2.jpg";
+import ModernHouse3 from "../../assets/Modern-House/3.jpg";
+import ModernHouse4 from "../../assets/Modern-House/4.jpg";
+import ModernHouse5 from "../../assets/Modern-House/5.jpg";
+import ModernHouse6 from "../../assets/Modern-House/6.jpg";
+import ModernHouse7 from "../../assets/Modern-House/7.jpg";
+import ModernHouse8 from "../../assets/Modern-House/8.jpg";
+import ModernHouse9 from "../../assets/Modern-House/9.jpg";
+import ModernHouse10 from "../../assets/Modern-House/10.jpg";
+import ModernHouse11 from "../../assets/Modern-House/11.jpg";
+import ModernHouse12 from "../../assets/Modern-House/12.jpg";
+
+import HouseDesign from "../../assets/House-Design/1.jpg";
+import RestaurantInterior2 from "../../assets/Restaurant-Interior-Negambo/2.jpg";
+import RestaurantInterior3 from "../../assets/Restaurant-Interior-Negambo/3.jpg";
+import RestaurantInterior4 from "../../assets/Restaurant-Interior-Negambo/4.jpg";
+import RestaurantInterior5 from "../../assets/Restaurant-Interior-Negambo/5.jpg";
+import RestaurantInterior6 from "../../assets/Restaurant-Interior-Negambo/6.jpg";
+import RestaurantInterior7 from "../../assets/Restaurant-Interior-Negambo/7.jpg";
+import RestaurantInterior8 from "../../assets/Restaurant-Interior-Negambo/8.jpg";
 
 type Project = {
   title: string;
@@ -10,40 +39,102 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Modern Villa",
+    title: "Housing Project in Horana",
     description:
-      "A luxury villa designed with modern architecture and eco-friendly features.",
-    mainImg: "https://via.placeholder.com/400x300?text=Modern+Villa",
+      "An exquisite fusion of modern aesthetics and seamless natural integration, this residence embodies elegance, sophistication, and sustainability. Designed with a minimalist approach, it strikes a perfect balance between contemporary architecture and lush greenery.\n\n" +
+      "The home's exterior features clean lines, neutral tones, and tasteful wooden accents. Large, wooden-framed windows amplify natural warmth and allow the structure to breathe, while cascading greenery from the upper terrace softens the architectural edges and blends the home into its natural surroundings.\n\n" +
+      "Expansive glass windows flood the interiors with natural light, creating a bright and inviting atmosphere. The open-plan interior design extends organically to a serene balcony and a landscaped garden, offering ideal spaces for relaxation, entertainment, and peaceful living.\n\n" +
+      "Crafted with eco-conscious principles, this home is both energy-efficient and future-forward. Every detail reflects our commitment to creating spaces that are not only visually stunning but also practical and sustainable for modern lifestyles.\n\n" +
+      "Whether intended for residential or commercial use, this housing project in Horana showcases architectural innovation at its finest.",
+
+    mainImg: ModernHouse,
     gallery: [
-      "https://via.placeholder.com/600x400?text=Villa+1",
-      "https://via.placeholder.com/600x400?text=Villa+2",
-      "https://via.placeholder.com/600x400?text=Villa+3",
+      ModernHouse,
+      ModernHouse2,
+      ModernHouse3,
+      ModernHouse4,
+      ModernHouse5,
+      ModernHouse6,
+      ModernHouse7,
+      ModernHouse8,
+      ModernHouse9,
+      ModernHouse10,
+      ModernHouse11,
+      ModernHouse12
     ],
   },
+
   {
-    title: "Corporate Office",
+    title: "Modern Housing Project in Panadura",
     description:
       "A sustainable office space focused on energy efficiency and open workspaces.",
-    mainImg: "https://via.placeholder.com/400x300?text=Office",
+    mainImg: HousePanadura,
     gallery: [
       "https://via.placeholder.com/600x400?text=Office+1",
       "https://via.placeholder.com/600x400?text=Office+2",
     ],
   },
   {
-    title: "Landscape Park",
+    title: "Plaza Design(Residential Building Project) in Vavuniya",
     description:
       "An open green park with natural walkways, lighting, and gathering spots.",
-    mainImg: "https://via.placeholder.com/400x300?text=Park",
+    mainImg: PlazaDesign,
     gallery: [
       "https://via.placeholder.com/600x400?text=Park+1",
       "https://via.placeholder.com/600x400?text=Park+2",
     ],
   },
+  {
+    title: "Grandiose - Hotel Exterior Design",
+    description:
+      "An elegant and luxurious hotel designed with a blend of modern and classic styles.",
+    mainImg: HotelGrandiose,
+    gallery: [
+      "https://via.placeholder.com/600x400?text=Hotel+1",
+      "https://via.placeholder.com/600x400?text=Hotel+2",
+      "https://via.placeholder.com/600x400?text=Hotel+3",
+    ],
+  },
+  {
+    title: "Villa Design",
+    description:
+      "A stunning villa design offering a comfortable and spacious living environment.",
+    mainImg: VillaDesign,
+    gallery: [
+      "https://via.placeholder.com/600x400?text=VillaDesign+1",
+      "https://via.placeholder.com/600x400?text=VillaDesign+2",
+      "https://via.placeholder.com/600x400?text=VillaDesign+3",
+    ],
+  },
+  {
+    title: "Restaurant Interior Design in Negambo",
+    description:
+      "A modern and stylish restaurant interior with a cozy and welcoming ambiance.",
+    mainImg: RestaurantInteriorProject,
+    gallery: [
+      RestaurantInteriorProject,
+      RestaurantInterior2,
+      RestaurantInterior3,
+      RestaurantInterior4,
+      RestaurantInterior5,
+      RestaurantInterior6,
+      RestaurantInterior7,
+      RestaurantInterior8,
+    ],
+  },
+  {
+    title: "Modern House Exterior Design ",
+    description:
+      "A contemporary house design that focuses on minimalism and functionality.",
+    mainImg: HouseDesign,
+    gallery: [
+      "https://via.placeholder.com/600x400?text=House+Design+1",
+      "https://via.placeholder.com/600x400?text=House+Design+2",
+    ],
+  },
 ];
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null); // ✅ set type here
   const navigate = useNavigate();
 
   return (
@@ -57,57 +148,41 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="my-project-container">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="relative group overflow-hidden rounded-2xl shadow-lg"
-          >
-            <img
-              src={project.mainImg}
-              alt={project.title}
-              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 className="text-white text-xl font-bold mb-3">
-                {project.title}
-              </h3>
-              <button
-                onClick={() => navigate("/project", { state: project })}
-                className="bg-[#10B981] text-white px-4 py-2 rounded hover:bg-[#0e9e6e] transition"
-              >
-                View
-              </button>
+          <div key={index} className="project-card group">
+            <div className="project-image-wrapper">
+              <img
+                src={project.mainImg}
+                alt={project.title}
+                className="project-image"
+              />
+              <div className="project-overlay">
+                <h3
+                  className="text-white text-sm mb-4 px-2 text-center"
+                  style={{
+                    fontSize: "20px",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 550,
+                  }}
+                >
+                  {project.title}
+                </h3>
+                <button
+                  className="bg-[#10B981] text-white px-4 py-2 rounded hover:bg-[#0e9e6e] transition"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => navigate("/project", { state: project })}
+                >
+                  View Project
+                </button>
+              </div>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Modal */}
-      {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-8 overflow-y-auto">
-          <div className="bg-white rounded-xl p-6 max-w-4xl w-full relative">
-            <button
-              onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 text-gray-700 hover:text-red-500 text-xl font-bold"
-            >
-              ✕
-            </button>
-            <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
-            <p className="text-gray-700 mb-4">{selectedProject.description}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {selectedProject.gallery.map((img, i) => (
-                <img
-                  key={i}
-                  src={img}
-                  alt={`Gallery ${i}`}
-                  className="w-full h-60 object-cover rounded"
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
