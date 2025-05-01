@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import logo from "../../assets/outerBoarderLogo.png";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,18 +61,17 @@ const NavBar = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <a
           href="#"
-          className="font-bold transition-colors"
-          style={{
-            color: "#E5E5E5",
-            fontFamily: "'Lilita One', sans-serif",
-            fontSize: "30px",
-          }}
+          className="flex items-center"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Logo
+          <img
+            src={logo}
+            alt="Urban Elevate Logo"
+            className="h-20 w-auto object-contain"
+          />
         </a>
 
         <div className="flex items-center space-x-8">

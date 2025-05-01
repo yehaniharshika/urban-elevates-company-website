@@ -1,11 +1,15 @@
 import NavBar from '../../components/NavBar/NavBar';
 import Header from '../../components/Header/Header';
+import Services from '../../components/Services/Services';
+
 
 const Home = () => {
   return (
-    <div className="bg-[#F9FAFB] min-h-screen">
+    <div>
       <NavBar />
       <Header />
+      <Services/>
+      
     </div>
   );
 };

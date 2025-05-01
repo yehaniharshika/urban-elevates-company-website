@@ -9,17 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <>
-      <div className="app">
-        <NavBar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-          </Routes>
-        </main>
-      </div>
+    <div className="overflow-x-hidden">
+      <NavBar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
