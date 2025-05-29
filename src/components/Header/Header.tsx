@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import design1 from "../../assets/Home-Section/3.jpg";
-import design2 from "../../assets/Home-Section/5.jpg";
-import design3 from "../../assets/Home-Section/7.jpg";
-import design4 from "../../assets/Home-Section/6.jpg";
+import design1 from "../../assets/JVJG_11 - Photo (2).jpg";
+import design2 from "../../assets/4.jpg";
+import design3 from "../../assets/5.jpg";
+import design4 from "../../assets/vgr_7 - Photo (4).jpg";
 
 const sliderContent = [
   {
@@ -49,15 +49,16 @@ const Header = () => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-6 text-center">
-        <div className="max-w-5xl text-white space-y-4">
+        <div className="max-w-7xl text-white space-y-4">
           <h1
-            className="text-4xl md:text-7xl font-bold"
+            className="text-4xl md:text-6xl"
             style={{
-              fontFamily: "'Lilita One', sans-serif",
-              textShadow: "2px 2px 3px #10B981",
+              fontFamily: "Archivo Black, sans-serif",
+              fontWeight: "bold",
+              textShadow: "2px 2px 3px rgb(0, 6, 4)",
             }}
           >
-            Welcome to Urban Elevates Architects
+            WELCOME TO URBAN ELEVATES ARCHITECTS
           </h1>
 
           <p

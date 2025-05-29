@@ -3,6 +3,13 @@ import "../Projects/Projects.css";
 
 // Image Imports
 import HotelGrandiose from "../../assets/Hotel-Grandiose/4.jpg";
+import HotelGrandiose2 from "../../assets/Hotel-Grandiose/1.jpg";
+import HotelGrandiose3 from "../../assets/Hotel-Grandiose/2.jpg";
+import HotelGrandiose4 from "../../assets/Hotel-Grandiose/3.jpg";
+import HotelGrandiose5 from "../../assets/Hotel-Grandiose/5.jpg";
+import HotelGrandiose6 from "../../assets/Hotel-Grandiose/6.jpg";
+import HotelGrandiose7 from "../../assets/Hotel-Grandiose/7.jpg";
+
 import HousePanadura from "../../assets/House-Panadura/3.jpg";
 import HousePanadura2 from "../../assets/House-Panadura/1.jpg";
 import HousePanadura3 from "../../assets/House-Panadura/2.jpg";
@@ -63,6 +70,7 @@ import RestaurantInterior5 from "../../assets/Restaurant-Interior-Negambo/5.jpg"
 import RestaurantInterior6 from "../../assets/Restaurant-Interior-Negambo/6.jpg";
 import RestaurantInterior7 from "../../assets/Restaurant-Interior-Negambo/7.jpg";
 import RestaurantInterior8 from "../../assets/Restaurant-Interior-Negambo/8.jpg";
+import { LucideHotel } from "lucide-react";
 
 type Project = {
   title: string;
@@ -117,7 +125,10 @@ const projects: Project[] = [
   {
     title: "Plaza Design(Commercial Building Project) in Vavuniya",
     description:
-      "An open green park with natural walkways, lighting, and gathering spots.",
+      "Royalton Square is a neoclassical-style mixed-use development that embodies timeless elegance and architectural grandeur. The design features a symmetrical façade with refined stone-textured finishes, classical columns, and ornate detailing inspired by historic European architecture.\n\n" +
+      "A central domed pavilion anchors the structure, accompanied by arched windows, intricate wrought iron balconies, and a prominent portico entrance—creating a striking and formal visual impression. Each element has been thoughtfully integrated to reflect both tradition and sophistication.\n\n" +
+      "Designed to serve both commercial and residential purposes, Royalton Square blends classical beauty with functional versatility, offering a distinguished and enduring architectural presence.",
+
     mainImg: PlazaDesign,
     gallery: [
       PlazaDesign,
@@ -135,21 +146,29 @@ const projects: Project[] = [
   {
     title: "Grandiose - Hotel Exterior Design",
     description:
-      "An elegant and luxurious hotel designed with a blend of modern and classic styles.",
+      "The Grandiose is a luxurious neoclassical architectural development designed to embody elegance, symmetry, and grandeur. Its stately façade features grand arched windows, classical columns, and a central portico entrance that creates a dramatic visual statement.\n\n" +
+      "At the heart of the entryway, a cascading chandelier and sculpted fountain enhance the welcoming experience, establishing a sense of prestige and sophistication. The design is enriched with lush landscaping and gracefully lined palm trees, while a red-tiled hipped roof introduces a Mediterranean flair.\n\n" +
+      "Balancing classical grandeur with modern refinement, The Grandiose has been thoughtfully envisioned for prestigious hospitality or institutional purposes, offering both visual impact and functional excellence.",
+
     mainImg: HotelGrandiose,
     gallery: [
-      "https://via.placeholder.com/600x400?text=Hotel+1",
-      "https://via.placeholder.com/600x400?text=Hotel+2",
-      "https://via.placeholder.com/600x400?text=Hotel+3",
+      HotelGrandiose,
+      HotelGrandiose2,
+      HotelGrandiose3,
+      HotelGrandiose4,
+      HotelGrandiose5,
+      HotelGrandiose6,
+      HotelGrandiose7,
     ],
   },
   {
     title: "Villa Design",
     description:
-      "A stunning villa design offering a comfortable and spacious living environment.",
+      "A modern villa design blending natural textures with contemporary architecture. Featuring a mix of wood, brick, and glass elements, this villa emphasizes openness and harmony with nature. Large glass panels invite sunlight into cozy interior spaces, while the surrounding landscaped garden and stone pathway enhance the serene outdoor atmosphere.",
     mainImg: VillaDesign,
     gallery: [VillaDesign2, VillaDesign, VillaDesign3, VillaDesign4],
   },
+
   {
     title: "Restaurant Interior Design in Negambo",
     description:
@@ -174,7 +193,7 @@ const projects: Project[] = [
   {
     title: "Modern House Exterior Design ",
     description:
-      "A contemporary house design that focuses on minimalism and functionality.",
+      "This modern tropical house exudes elegance with its natural finishes and open layout. Designed for serene suburban living, the home features a mix of soft-toned stone, exposed brickwork, and warm wood-framed glass doors. The lush rooftop garden, cascading greenery from the balconies, and surrounding palm trees enhance its organic connection to nature. A stylish green gate with geometric metal accents provides both security and visual charm, while the paved driveway welcomes residents into a tranquil and sophisticated living environment",
     mainImg: HouseDesign,
     gallery: [
       HouseDesign,
