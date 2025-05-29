@@ -209,9 +209,9 @@ const Footer: React.FC = () => {
         aria-label="Chat with us on WhatsApp"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white 
              rounded-full p-4 shadow-lg transition-all transform hover:scale-110
-             border-4 border-white animate-bounce hover:animate-none"
+             border-4 border-white animate-bounce hover:animate-none bo"
       >
-        <FaWhatsapp size={28} className="drop-shadow-md" />
+        <FaWhatsapp size={26} className="drop-shadow-md" />
       </a>
     </>
   );

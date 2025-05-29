@@ -1,12 +1,14 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/outerBoarderLogo.png";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+   const navigate = useNavigate(); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +35,11 @@ const NavBar = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
+    if (id === "contact") {
+      navigate("/contact"); // ✅ Navigate to Contact page
+      setIsMobileMenuOpen(false);
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
