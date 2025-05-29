@@ -77,14 +77,24 @@ const AboutDetails = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 w-full">
+          <div className="lg:w-1/2">
             <video
+              className="w-full h-auto rounded-lg shadow-lg"
               controls
-              className="w-full rounded-xl shadow-md"
-              poster="/thumbnail.jpg"
+              preload="metadata"
+              autoPlay
+              muted
             >
-              <source src="/your-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              <source src="/Video/dveywa.mp4" type="video/mp4" />
+              <p className="text-center text-gray-600 mt-4">
+                Your browser does not support the video tag.
+                <a
+                  href="/Video/dveywa.mp4"
+                  className="text-blue-600 underline ml-1"
+                >
+                  Download the video
+                </a>
+              </p>
             </video>
           </div>
         </div>
@@ -96,9 +106,19 @@ const AboutDetails = () => {
               controls
               className="w-full rounded-xl shadow-md"
               poster="/thumbnail.jpg"
+              autoPlay
+              muted
             >
-              <source src="/your-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              <source src="/Video/video-02.mp4" type="video/mp4" />
+              <p className="text-center text-gray-600 mt-4">
+                Your browser does not support the video tag.
+                <a
+                  href="/Video/video-02.mp4"
+                  className="text-blue-600 underline ml-1"
+                >
+                  Download the video
+                </a>
+              </p>
             </video>
           </div>
 
@@ -265,9 +285,20 @@ const AboutDetails = () => {
               controls
               className="w-full rounded-xl shadow-md"
               poster="/thumbnail.jpg"
+              autoPlay
+              muted
+              loop
             >
-              <source src="/your-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              <source src="/Video/video-03.mp4" type="video/mp4" />
+              <p className="text-center text-gray-600 mt-4">
+                Your browser does not support the video tag.
+                <a
+                  href="/Video/video-03.mp4"
+                  className="text-blue-600 underline ml-1"
+                >
+                  Download the video
+                </a>
+              </p>
             </video>
           </div>
         </div>
