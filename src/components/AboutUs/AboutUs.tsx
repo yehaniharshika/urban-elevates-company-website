@@ -10,7 +10,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="py-16 px-4 md:px-12 lg:px-20 text-black bg-white">
+    <div className="py-16 px-4 md:px-12 lg:px-20 text-black bg-white" id="about">
       {/* Heading */}
       <h1
         className="text-3xl md:text-5xl font-bold mb-12 text-center text-[#1C1C1C]"
